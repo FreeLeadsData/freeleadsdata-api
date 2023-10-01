@@ -27,7 +27,7 @@ client = BlackStack::FreeLeadsData::API.new(api_key, 'http://127.0.0.1:3000')
 ## 3. Creating a New Search
 
 ```ruby
-client.new({
+p client.new({
     'name' => 'test (created by API)',
     'stop_limit' => 999999, # 400 million
     'status' => true,
