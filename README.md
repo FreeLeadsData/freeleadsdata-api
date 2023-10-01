@@ -1,3 +1,5 @@
+![Gem version](https://img.shields.io/gem/v/freeleadsdata-api) ![Gem downloads](https://img.shields.io/gem/dt/freeleadsdata-api)
+
 # freeleadsdata-api
 
 Ruby Gem for Managing [FreeLeadData.com](https://freeleadsdata.com) via API
