@@ -65,3 +65,11 @@ p a['searches'].size
 p a['searches'].first
 # => {"id"=>"1c640f65-29c0-46e6-975d-bd57092d4cf4", "name"=>"test10 (created by API)", "status"=>true, "earning_per_verified_email"=>0.02200374531835206, "stop_limit"=>999999, "verify_email"=>false, "direct_phone_number_only"=>false, "auto_drain"=>true, "keywords"=>[], "job_titles"=>[{"positive"=>true, "value"=>"President"}, {"positive"=>true, "value"=>"Owner"}, {"positive"=>true, "value"=>"Director"}, {"positive"=>true, "value"=>"CEO"}, {"positive"=>true, "value"=>"Founder"}], "seniorities"=>[], "departments"=>[], "states"=>[{"positive"=>true, "value"=>"FL"}], "industries"=>[{"positive"=>true, "value"=>"Real Estate"}], "sics"=>[], "company_revenues"=>[], "company_headcounts"=>[{"positive"=>true, "value"=>"1 to 10"}, {"positive"=>true, "value"=>"26 to 50"}, {"positive"=>true, "value"=>"11 to 25"}], "company_names"=>[], "company_domains"=>[], "insight"=>{"enabled"=>false, "source"=>nil, "requirement"=>nil, "template"=>nil, "prompt1"=>nil, "prompt2"=>nil, "positive_response_pattern"=>nil, "negative_response_pattern"=>nil}, "export"=>{"export_download_url"=>"", "export_time"=>nil}, "stats"=>{"stat_tier1_scope"=>0, "stat_tier2_scope"=>0, "stat_tier3_scope"=>0, "stat_tier4_scope"=>0, "stat_tier5_scope"=>0, "stat_processed_results"=>0, "stat_verified_results"=>0, "stat_progress"=>0.0}, "economics"=>{"stat_earning"=>0.0, "stat_cost"=>0.0, "stat_profit"=>0.0}, "report"=>{"forecast_text"=>"0", "badge_color"=>"orange", "badge_text"=>"out of credits", "profit_color"=>"green", "profit_text"=>"+$ 0.0", "revenue_text"=>"0.0%", "scope"=>"~0", "progress"=>"0.0%", "processed"=>"0", "processed_rate"=>"0.0%", "verified"=>"0", "verified_rate"=>"0.0%"}}
 ```
+
+## 5. Pagination
+
+```ruby
+page = 1
+page_size = 10
+a = client.get('created by API', page, page_size)
+```
