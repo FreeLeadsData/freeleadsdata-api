@@ -52,6 +52,7 @@ p client.new({
         { 'value' => '26 to 50', 'positive' => true },
     ],
 })
+# => {"status"=>"success", "id"=>"1c640f65-29c0-46e6-975d-bd57092d4cf4"}
 ```
 
 ## 4. Getting Searches
