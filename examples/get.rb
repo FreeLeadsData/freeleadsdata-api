@@ -1,7 +1,7 @@
-require_relative '../lib/freeleadsdata-api'
+require 'freeleadsdata-api'
 
 api_key = 'foo'
-client = BlackStack::FreeLeadsData::API.new(api_key, 'http://127.0.0.1:3000')
+client = BlackStack::FreeLeadsData::API.new(api_key)
 
 a = client.get('created by API')
 p a['status']
